@@ -1,0 +1,170 @@
+body {
+	background-color: #f7f7f7;
+}
+
+a{
+	color: inherit !important;
+	text-decoration: none !important;
+}
+
+.fz-1{
+	font-size: .8rem;
+}
+
+.custom-gray-color {
+	color: #bdbdbd;
+}
+
+.standard-margin {
+	margin-top: 200px;
+}
+
+.heroSection {
+	background-image: url('../assets/heroImage.webp'); 
+	background-position: right;
+	background-position-y: inherit;
+	margin: 0px;
+	height: calc(100vh - 3rem) ;
+}
+
+.before-line-component::before{
+	content: "";
+	border-bottom: 1px solid #dc3545;
+	padding: 25px;
+	position: absolute;
+	left: -5px;
+	top: -120%;
+}
+.before-line-component {
+	position: relative;
+	text-transform: uppercase;
+	padding-left: 50px;
+}
+
+.custom-card{
+	position: relative;
+	margin-bottom: 10rem;
+}
+
+.custom-card-body{
+	position: absolute;
+	bottom: -100px;
+	background: white;
+	padding: 25px;
+	max-width: 75%;
+}
+
+.custom-card-title{
+	font-size: 13px;
+	position: relative;
+	margin-left: 45px;
+}
+
+.custom-card-title::before {
+	content: "";
+	border-bottom: 2px solid #dc3545;
+	padding: 14px;
+	position: absolute;
+	left: -45px;
+	top: -120%;
+}
+
+.custom-card-desc{
+	font-size: 17px;
+	transition: all .3s ease-out;
+}
+
+.custom-card-desc:hover {
+	color: #10285d !important;
+}
+
+.slider-title {
+	color: rgb(240, 78, 60);
+}
+
+.slider-person-job {
+	font-size: 15px;
+	color: #57667e;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.team-custom-card-img {
+	transition: all .5s
+}
+.team-custom-card-img:hover {
+	transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+	.d-md-flex {
+		display: flex;
+	}
+	.w-md-50 {
+		width: 50% !important;
+	}
+	.pl-md-11 {
+		padding-left: 11rem !important;
+	}
+	.p-md-5 {
+		padding: 3rem;
+	}
+	.mx-md-2 {
+		margin-right: .5rem;
+		margin-left: .5rem;
+	}
+	.md-top-60 {
+		top: 60%;
+	}
+	.md-m-4 {
+		margin: 1.5rem;
+	}
+	.w-md-75 {
+		width: 75%;
+	}
+}
+
+@media (max-width: 768px) {
+	.fz-md-15{
+		font-size: 15px !important;
+	}
+	.md-flex-column {
+		flex-direction: column !important;
+	}
+}
+
+
+/* animations */
+
+.bottom-to-top-animation::before{
+	content: '';
+	background: #ff2143;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 0%;
+	transition: all 0.5s ease-in-out;
+	z-index: -1;
+}
+.bottom-to-top-animation{
+	transition: all 0.5s ease-in-out;
+
+}
+
+.bottom-to-top-animation:hover{
+	color: white !important;
+}
+
+.bottom-to-top-animation:hover::before {
+	width: 100%;
+}
+
+.list-animation {
+	transition: all .2s ease-in;
+}
+
+.list-animation:hover {
+	color: white;
+	padding-right: 10px;
+}
